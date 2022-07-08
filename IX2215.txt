@@ -3,7 +3,7 @@
 ! Compiled May 17-Tue-2022 13:48:55 JST #2
 ! Current time Jul 08-Fri-2022 16:43:34 JST
 !
-hostname TYH_Router01
+hostname  IX2215
 timezone +09 00
 !
 logging buffered 131072
@@ -20,14 +20,6 @@ ip route default GigaEthernet0.1 distance 200
 ip route default Tunnel0.0 distance 20
 ip dhcp enable
 ip access-list ipv4_udp_range permit udp src any sport range 1024 65535 dest any dport range 1024 65535
-ip access-list server_services permit tcp src 192.168.1.14/32 sport eq 13389 dest any dport any
-ip access-list server_services permit tcp src 192.168.1.51/32 sport eq 25566 dest any dport any
-ip access-list server_services permit tcp src 192.168.1.53/32 sport eq 25567 dest any dport any
-ip access-list server_services permit tcp src 192.168.1.54/32 sport eq 443 dest any dport any
-ip access-list server_services permit tcp src 192.168.1.54/32 sport eq 992 dest any dport any
-ip access-list server_services permit tcp src 192.168.1.54/32 sport eq 1194 dest any dport any
-ip access-list server_services permit tcp src 192.168.1.54/32 sport eq 5555 dest any dport any
-ip access-list server_services permit udp src 192.168.1.54/32 sport eq 1194 dest any dport any
 !
 !
 ipv6 ufs-cache max-entries 50000
