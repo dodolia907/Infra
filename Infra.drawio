@@ -1,9 +1,21 @@
-<mxfile host="app.diagrams.net" modified="2022-07-08T17:32:40.888Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="8rTNoG4ltYWEnQ2PuoN9" version="20.0.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-08T18:03:41.850Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="e8bGh883VVTfuhBcdCW0" version="20.0.4" type="github">
   <diagram id="HauMtvO4F6rF27pvNS3z" name="Page-1">
-    <mxGraphModel dx="2012" dy="609" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2120" dy="609" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="0IWlx2Su5lGMKtxY5UfD-125" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=6.497380623973754;rotation=-90;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-25" y="-5" width="10" height="163.01" as="geometry" />
+        </mxCell>
+        <mxCell id="0IWlx2Su5lGMKtxY5UfD-117" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=6.497380623973754;rotation=-6;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="107.61" y="76.07" width="10" height="713.01" as="geometry" />
+        </mxCell>
+        <mxCell id="0IWlx2Su5lGMKtxY5UfD-116" value="" style="endArrow=none;html=1;rounded=0;fontSize=9;entryX=0.876;entryY=0.44;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="0IWlx2Su5lGMKtxY5UfD-7" target="0IWlx2Su5lGMKtxY5UfD-114">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-20" y="270" as="sourcePoint" />
+            <mxPoint x="30" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="0IWlx2Su5lGMKtxY5UfD-91" value="" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;fontSize=3;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
           <mxGeometry x="-20" y="620" width="270" height="60" as="geometry" />
         </mxCell>
@@ -345,6 +357,71 @@
         </mxCell>
         <mxCell id="0IWlx2Su5lGMKtxY5UfD-113" value="launchpencil" style="text;html=1;strokeColor=#666666;fillColor=#f5f5f5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=0;fontSize=3;fontColor=#333333;" vertex="1" parent="1">
           <mxGeometry x="190" y="1090" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0IWlx2Su5lGMKtxY5UfD-114" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#d79b00;shadow=0;dashed=0;shape=mxgraph.ios7.icons.cloud;fontSize=9;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="37.61" y="50" width="80" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="0IWlx2Su5lGMKtxY5UfD-118" value="Cloudflared Argo Tunnel" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=0;fontSize=3;fillColor=#dae8fc;strokeColor=#6c8ebf;rotation=84;" vertex="1" parent="1">
+          <mxGeometry x="20" y="166" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="0IWlx2Su5lGMKtxY5UfD-119" value="" style="endArrow=none;html=1;rounded=0;fontSize=9;exitX=0.1;exitY=0.026;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="0IWlx2Su5lGMKtxY5UfD-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="70" as="sourcePoint" />
+            <mxPoint x="110" y="70" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="440" y="40" />
+              <mxPoint x="160" y="40" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0IWlx2Su5lGMKtxY5UfD-122" value="" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.lock;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="-246.70000000000002" y="32" width="23.4" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0IWlx2Su5lGMKtxY5UfD-134" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1.006;entryY=0.825;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=9;" edge="1" parent="1" source="0IWlx2Su5lGMKtxY5UfD-123" target="0IWlx2Su5lGMKtxY5UfD-121">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-280" y="165" />
+              <mxPoint x="-280" y="109" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0IWlx2Su5lGMKtxY5UfD-123" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-social-github-128.png;shadow=0;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="-152.5" y="116" width="65" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="0IWlx2Su5lGMKtxY5UfD-126" value="Argo Smart Routing" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=0;fontSize=3;fillColor=#f5f5f5;strokeColor=#666666;rotation=0;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="-72.5" y="66.5" width="105" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="0IWlx2Su5lGMKtxY5UfD-127" value="Cloudflare Edge&lt;br&gt;(NRT/KIX)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=0;fontSize=3;fillColor=#f5f5f5;strokeColor=#666666;rotation=0;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="35.11" y="15" width="85" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="0IWlx2Su5lGMKtxY5UfD-129" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=6.497380623973754;rotation=-90;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-257.5" y="-22.5" width="10" height="198.01" as="geometry" />
+        </mxCell>
+        <mxCell id="0IWlx2Su5lGMKtxY5UfD-136" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=9;" edge="1" parent="1" source="0IWlx2Su5lGMKtxY5UfD-121" target="0IWlx2Su5lGMKtxY5UfD-123">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-270" y="101" />
+              <mxPoint x="-270" y="149" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0IWlx2Su5lGMKtxY5UfD-121" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/whcompare-isometric-web-hosting-servers/50/root-access-128.png;shadow=0;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="-400" y="26.5" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="0IWlx2Su5lGMKtxY5UfD-124" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#d79b00;shadow=0;dashed=0;shape=mxgraph.ios7.icons.cloud;fontSize=9;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="-160" y="47.5" width="80" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="0IWlx2Su5lGMKtxY5UfD-130" value="Cloudflare WARP Tunnel" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=0;fontSize=3;fillColor=#f5f5f5;strokeColor=#666666;rotation=0;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="-300" y="66.5" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="0IWlx2Su5lGMKtxY5UfD-132" value="Cloudflare Edge&lt;br&gt;(最寄り)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=0;fontSize=3;fillColor=#f5f5f5;strokeColor=#666666;rotation=0;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="-162.5" y="15" width="85" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="0IWlx2Su5lGMKtxY5UfD-135" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/hawcons/32/700024-icon-36-one-finger-double-tap-128.png;shadow=0;fontSize=9;imageBackground=#D1D1D1;" vertex="1" parent="1">
+          <mxGeometry x="-246.7" y="126.75" width="48.76" height="48.76" as="geometry" />
+        </mxCell>
+        <mxCell id="0IWlx2Su5lGMKtxY5UfD-137" value="172.16.0.0/22" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=0;fontSize=3;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="357.59" y="441.5" width="84.83" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
