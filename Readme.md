@@ -221,7 +221,7 @@ interface GigaEthernet0.1
 ## IPv4 over IPv6 トンネル (transix, DS-Lite)の設定
 インターネットマルチフィードとトンネルを張ってIPv4 over IPv6で通信をします。
 宛先アドレスはインターネットマルチフィードのアドレスを指定します。
-NTT東日本とNTT西日本でアドレスが違うので、ターミナルで`nslookup gw.transix.jp`と入力して出てきたIPv6アドレスを入力するか、fqdnで`gw.transix.jp`と指定します。
+NTT東日本とNTT西日本でアドレスが違うので、ターミナルで`nslookup gw.transix.jp`と入力して出てきたIPv6アドレスを入力するか、FQDNで`gw.transix.jp`と指定します。
 ```
 interface Tunnel0.0
   tunnel mode 4-over-6
