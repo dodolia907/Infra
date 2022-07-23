@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-07-23T02:16:40.453Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="BpkVZxt2LSUdkKruA-mJ" version="20.0.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-23T04:49:35.187Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="LnMAWpWAeNpXl04mklj2" version="20.0.4" type="github">
   <diagram id="dIbGLiEGfBmP9LP7zvDe" name="Page-1">
     <mxGraphModel dx="1422" dy="835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -25,10 +25,10 @@
           <mxGeometry x="30" y="1040" width="110" height="100" as="geometry" />
         </mxCell>
         <mxCell id="l4FeJFYHFM_gPsqZlVhB-27" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="560" y="760" width="640" height="380" as="geometry" />
+          <mxGeometry x="560" y="760" width="400" height="380" as="geometry" />
         </mxCell>
         <mxCell id="l4FeJFYHFM_gPsqZlVhB-26" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="210" y="320" width="990" height="340" as="geometry" />
+          <mxGeometry x="210" y="320" width="750" height="340" as="geometry" />
         </mxCell>
         <mxCell id="l4FeJFYHFM_gPsqZlVhB-132" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;" edge="1" parent="1" source="l4FeJFYHFM_gPsqZlVhB-1" target="l4FeJFYHFM_gPsqZlVhB-34">
           <mxGeometry relative="1" as="geometry" />
@@ -80,18 +80,8 @@
         <mxCell id="l4FeJFYHFM_gPsqZlVhB-14" value="&lt;h1&gt;ロビーサーバ&lt;/h1&gt;&lt;p&gt;Ampere A1 (ARM) VM&lt;/p&gt;&lt;p&gt;2Core/16GB/2Gbps&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="720" y="540" width="240" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="l4FeJFYHFM_gPsqZlVhB-141" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;" edge="1" parent="1" target="l4FeJFYHFM_gPsqZlVhB-139">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="960" y="845.5" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="l4FeJFYHFM_gPsqZlVhB-20" value="&lt;h1&gt;メインサーバ&lt;/h1&gt;&lt;p&gt;&amp;nbsp;Intel Xeon E3-1220v3 VM&lt;/p&gt;&lt;p&gt;4Core/16GB/1Gbps&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="720" y="800" width="240" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="l4FeJFYHFM_gPsqZlVhB-140" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;" edge="1" parent="1" target="l4FeJFYHFM_gPsqZlVhB-139">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="960" y="965.5" as="sourcePoint" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="l4FeJFYHFM_gPsqZlVhB-21" value="&lt;h1&gt;資源サーバ (調整中)&lt;/h1&gt;&lt;p&gt;Intel Xeon E5-2630v2 VM&lt;/p&gt;&lt;p&gt;2Core/16GB/1Gbps&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="720" y="920" width="240" height="90" as="geometry" />
@@ -298,12 +288,6 @@
         </mxCell>
         <mxCell id="l4FeJFYHFM_gPsqZlVhB-136" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/dellipack/128/monitor.png;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="38.49" y="811" width="78" height="78" as="geometry" />
-        </mxCell>
-        <mxCell id="l4FeJFYHFM_gPsqZlVhB-139" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="980" y="876" width="60" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="l4FeJFYHFM_gPsqZlVhB-142" value="プレイヤーデータベース&lt;br&gt;(インベントリ同期)(調整中)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="1040" y="891" width="150" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
