@@ -1,3 +1,16 @@
+Current Infrastructure Information: [stat.gikadai.tech](https://stat.gikadai.tech/d/0d9jH2m4k/home?orgId=1&from=now-12h&to=now)
+
+# Network
+
+### Switch
+Allied Telesis AT-x210-24GT<br>
+
+### Firewall
+Fortinet FortiGate 60D<br>
+
+### Router
+NEC UNIVERGE IX2215<br>
+
 # Server
 
 ### Server05
@@ -39,14 +52,3 @@ Intel Core i5-3470(Ivy Bridge) @3.20GHz 4C4T<br>
 8GB RAM, 120GB SSD<br>
 ATI FirePro V3800<br>
 Windows Server 2022 Essentials<br>
-
-# Network
-
-### Switch
-Allied Telesis AT-x210-24GT<br>
-
-### Firewall
-Fortinet FortiGate 60D<br>
-
-### Router
-NEC UNIVERGE IX2215<br>
