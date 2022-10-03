@@ -34,10 +34,8 @@ Proxmox VE<br>
 ### Server09
 HITACHI HA8000 RS220-h HM2<br>
 Intel Xeon E5-2630v2(Ivy Bridge-EP) @2.60GHz x2(Dual Xeon) 12C24T <br>
-40GB RAM(ECC/Registered), 120GB SSD +500GB HDD<br>
+72GB RAM(ECC/Registered), 120GB SSD +500GB HDD<br>
 Proxmox VE<br>
-<br>
-Memory will be expanded to 104GB or 136GB<br>
 <br>
 
 ### Server10
@@ -45,10 +43,3 @@ DELL Optiplex 3010<br>
 Intel Core i5-3470(Ivy Bridge) @3.20GHz 4C4T<br>
 8GB RAM, 500GB HDD<br>
 Windows Server 2022 Standard<br>
-
-### Server11
-Fujitsu ESPRIMO D582/G<br>
-Intel Core i5-3470(Ivy Bridge) @3.20GHz 4C4T<br>
-8GB RAM, 120GB SSD<br>
-ATI FirePro V3800<br>
-Windows Server 2022 Essentials<br>
