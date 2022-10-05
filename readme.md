@@ -17,7 +17,7 @@ NEC UNIVERGE IX2215<br>
 Fujitsu ESPRIMO D551/GX<br>
 Intel Core i3-3240(Ivy Bridge) @3.40GHz 2C4T<br>
 8GB RAM, 500GB HDD<br>
-Debian<br>
+Proxmox VE<br>
 
 ### Serevr06
 DELL Optiplex 3020<br>
