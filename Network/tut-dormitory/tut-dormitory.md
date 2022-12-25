@@ -27,6 +27,9 @@ DNS: CloudflareのDNSを使用
     DNS1: 1.1.1.1
     DNS2: 1.0.0.1
 
+transix:
+    ゲートアドレス: 2404:8e01::feed:100
+
 管理:
     http-server: 有効
     telnet-server: 有効
