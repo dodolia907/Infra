@@ -125,5 +125,4 @@ interface Tunnel0.0
   no tunnel adjust-mtu
   tunnel destination 2404:8e01::feed:100
   ip unnumbered FastEthernet1/0.0
-  ip tcp adjust-mss auto
   no shutdown
