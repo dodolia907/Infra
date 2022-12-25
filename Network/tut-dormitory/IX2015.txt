@@ -1,0 +1,129 @@
+! NEC Portable Internetwork Core Operating System Software
+! IX Series IX2010 (magellan-sec) Software, Version 8.3.48, RELEASE SOFTWARE
+! Compiled May 10-Tue-2011 15:33:32 JST #1
+! Last updated Dec 26-Mon-2022 04:44:47 JST
+!
+!
+hostname IX2015
+timezone +09 00
+!
+!
+!
+username admin password hash 0C34240482 administrator
+!
+!
+!
+ntp server 2001:3a0:0:2001::27:123
+ntp server 2001:3a0:0:2001::57:123
+ntp server 2001:3a0:0:2001::87:123
+!
+!
+!
+access-list mflt-list permit src any dest any type ipv6
+access-list mflt-list permit src any dest any type ip
+!
+!
+ip ufs-cache enable
+ip route default Tunnel0.0 
+ip dhcp enable
+!
+!
+ipv6 ufs-cache enable
+ipv6 dhcp enable
+ipv6 access-list block-list deny ip src any dest any
+ipv6 access-list dhcpv6-list permit udp src any sport any dest any dport eq 546
+ipv6 access-list dhcpv6-list permit udp src any sport any dest any dport eq 547
+ipv6 access-list icmpv6-list permit icmp src any dest any
+ipv6 access-list permit-list permit ip src any dest any
+ipv6 access-list dynamic cache 65535
+ipv6 access-list dynamic dflt-list access permit-list
+!
+!
+!
+bridge irb enable
+no bridge 1 bridge ip
+!
+!
+!
+proxy-dns ip enable
+proxy-dns server 1.1.1.1
+proxy-dns server 1.0.0.1
+!
+telnet-server ip enable
+!
+http-server username admin
+http-server ip enable
+!
+!
+!
+!
+!
+!
+!
+!
+ip dhcp profile dhcpv4-sv
+  assignable-range 192.168.1.101 192.168.1.200
+  default-gateway 192.168.1.254
+  dns-server 192.168.1.254
+  lease-time 3600
+!
+ipv6 dhcp client-profile dhcpv6-cl
+  information-request
+  option-request dns-servers
+!
+device FastEthernet0/0
+!
+device FastEthernet0/1
+  shutdown
+!
+device FastEthernet1/0
+!
+device BRI1/0
+  isdn switch-type hsd128k
+!
+interface FastEthernet0/0.0
+  filter mflt-list 1 in
+  no ip address
+  ipv6 enable
+  ipv6 address autoconfig receive-default
+  ipv6 dhcp client dhcpv6-cl
+  ipv6 filter dhcpv6-list 1 in
+  ipv6 filter icmpv6-list 2 in
+  ipv6 filter block-list 100 in
+  ipv6 filter dhcpv6-list 1 out
+  ipv6 filter icmpv6-list 2 out
+  ipv6 filter dflt-list 100 out
+  bridge-group 1
+  no shutdown
+!
+interface FastEthernet0/1.0
+  no ip address
+  shutdown
+!
+interface FastEthernet1/0.0
+  filter mflt-list 1 in
+  ip address 192.168.1.254/24 
+  ip dhcp binding dhcpv4-sv
+  ipv6 enable
+  bridge-group 1
+  no shutdown
+!
+interface BRI1/0.0
+  encapsulation ppp
+  no auto-connect
+  no ip address
+  shutdown
+!
+interface Loopback0.0
+  no ip address
+!
+interface Null0.0
+  no ip address
+!
+interface Tunnel0.0
+  tunnel mode 4-over-6
+  no tunnel adjust-mtu
+  tunnel destination 2404:8e01::feed:100
+  ip unnumbered FastEthernet1/0.0
+  ip tcp adjust-mss auto
+  no shutdown
