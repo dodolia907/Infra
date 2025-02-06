@@ -1,0 +1,170 @@
+SW1#show star
+!
+! Startup-config saved on Sun Jan 26 06:42:15 2025 +0000 by manager via vty0
+!
+service password-encryption
+!
+hostname SW1
+!
+no banner motd
+!
+username manager privilege 15 password 8 hogehoge
+!
+!
+ssh server allow-users manager
+service ssh
+!
+no service telnet
+!
+service http
+!
+no clock timezone
+!
+snmp-server
+!
+!
+!
+aaa authentication enable default local
+aaa authentication login default local
+!
+!
+!
+!
+!
+!
+ip domain-lookup
+!
+!
+!
+no service dhcp-server
+!
+spanning-tree mode rstp
+!
+lacp global-passive-mode enable
+!
+vlan database
+ vlan 10 name private
+ vlan 20 name server
+ vlan 30 name guest
+ vlan 10,20,30 state enable
+!
+interface port1.0.1
+ switchport
+ switchport mode access
+ switchport access vlan 20
+ channel-group 1 mode active
+!
+interface port1.0.2
+ switchport
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ switchport trunk native vlan none
+ channel-group 2 mode active
+!
+interface port1.0.3
+ switchport
+ switchport mode access
+ switchport access vlan 20
+ channel-group 1 mode active
+!
+interface port1.0.4
+ switchport
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ switchport trunk native vlan none
+ channel-group 2 mode active
+!
+interface port1.0.5-1.0.6
+ switchport
+ switchport mode access
+ switchport access vlan 10
+ spanning-tree edgeport
+!
+interface port1.0.7-1.0.8
+ switchport
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ switchport trunk native vlan none
+ spanning-tree edgeport
+!
+interface port1.0.9-1.0.16
+ switchport
+ switchport mode access
+ switchport access vlan 20
+ spanning-tree edgeport
+!
+interface port1.0.17-1.0.18
+ switchport
+ switchport mode access
+ switchport access vlan 10
+ spanning-tree edgeport
+!
+interface port1.0.19
+ switchport
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ switchport trunk native vlan none
+ spanning-tree edgeport
+!
+interface port1.0.20
+ switchport
+ switchport mode access
+ switchport access vlan 10
+ spanning-tree edgeport
+!
+interface port1.0.21
+ switchport
+ switchport mode access
+ switchport access vlan 20
+ spanning-tree edgeport
+!
+interface port1.0.22-1.0.23
+ switchport
+ switchport mode access
+ switchport access vlan 10
+ spanning-tree edgeport
+!
+interface port1.0.24
+ switchport
+ switchport mode trunk
+ switchport trunk allowed vlan add 1,20,30
+ switchport trunk native vlan 10
+ spanning-tree edgeport
+!
+interface port1.0.25-1.0.26
+ switchport
+ switchport mode access
+ spanning-tree edgeport
+!
+interface port1.0.27
+ switchport
+ switchport mode access
+ switchport access vlan 10
+ spanning-tree edgeport
+!
+interface port1.0.28
+ switchport
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ switchport trunk native vlan none
+ spanning-tree edgeport
+!
+interface po1
+ switchport
+ switchport mode access
+ switchport access vlan 20
+!
+interface po2
+ switchport
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ switchport trunk native vlan none
+!
+interface vlan10
+ ip address 192.168.10.2/24
+ ip igmp snooping querier
+!
+line con 0
+line vty 0 7
+!
+end
